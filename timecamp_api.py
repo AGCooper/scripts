@@ -25,9 +25,9 @@ def set_dates():
 
 def create_url(url,ids,apikey,start_date,end_date):
 
-    #################
-    # Make API call #
-    #################
+    ############
+    # Make URL #
+    ############
     url = url.replace("{apikey}", apikey)
     url = url.replace("{user_ids}", ids)
     url = url.replace("{start_date}", str(start_date))
