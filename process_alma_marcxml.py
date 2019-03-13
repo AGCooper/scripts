@@ -41,9 +41,10 @@ def main():
     mmsid = "99939650000541"
     view = "full"
     expand = "null"
-    ################
-    # api call GET #
-    ################
+    ####################################################################
+    # api call GET                                                     #
+    # docs: http://docs.python-requests.org/en/master/user/quickstart/ #
+    ####################################################################
     payload = {'apikey': apikey, 'view': view, 'expand': expand}
     url = url.replace('{mmsid}', mmsid)
     r = requests.get(url, params = payload)
